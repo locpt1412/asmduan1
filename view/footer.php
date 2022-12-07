@@ -5,7 +5,7 @@
      <div class="address">
      <div class="thongtin">
         Trung tâm DVKH <br>
-        Ấp Vĩnh Khánh, xã An Thạnh, huyện Mỏ Cày Nam, tỉnh Bến Tre <br>
+         Vĩnh Khánh, xã An Thạnh, huyện Mỏ Cày Nam, tỉnh Bến Tre <br>
         Hotline: <a href="#">0372757845</a>
         <br>
         <br>
