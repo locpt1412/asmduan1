@@ -1,0 +1,253 @@
+body,
+html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 100%;
+    display: grid;
+    grid-template-areas: 
+    'header header'
+    'h2 h2'
+    'main aside'
+    'footer footer';
+}
+header{
+    background: pink;
+    grid-area: header;
+    height: 213px;
+    padding: 10px 0;
+    width: 100%;
+}
+.row{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    display: block;
+    max-width: 180px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+.logo img{
+    width: 100%;
+    
+}
+html, body{
+    font-family: sans-serif;
+}
+.main-menu{
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    font-weight: bold;
+    padding-left: 1px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    
+}
+.main-menu li{
+    list-style: none;
+    text-align: center;
+}
+.main-menu li a{
+    display: block;
+    color: #fff ;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-align: center;
+}
+.search-box{
+    margin-left: 35px;
+    margin-top: 28px;
+}
+
+.search-box .sb-text{
+    border-radius: 10px;
+    padding: 0 10px;
+    line-height: 20px;
+    height: 26px;
+    width: 150px;
+    background: transparent url(../images/1024px-Search_Icon.svg.png) no-repeat right;
+    background-size: contain;
+    
+}
+h2{
+    grid-area: h2;
+    height: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color: rgb(80, 80, 228);
+    margin-top: 100px;
+}
+.main-menu li a:hover{
+    color: blue;
+}
+.main-menu ul{
+    margin-top: 0px;
+    min-width: 150px;
+    position:absolute;
+    display: none;
+    list-style: none;
+    border: 1px solid gray;
+    background-color: hotpink;
+    border-radius: 5px;
+    line-height: 5px;
+
+}
+.main-menu ul a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-top: 2px solid gray;
+    padding-left: 0px;
+    font-variant: small-caps;
+    text-align: center;
+}
+.main-menu>li:hover>ul{
+    display: block;
+}
+.main-menu ul a:hover{
+    background-color: blue;
+    color: white;
+    background: transparent url("/images/bullet.png") no-repeat 5px center;
+    background-size:10%;
+    background-color: blue;
+    
+}
+.banner{
+padding-top: 0px;
+}
+
+
+main{
+    background: white;
+    grid-area: main;
+    width: 700px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.new{
+    display: flex;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+.new:hover{
+    transform: scale(1.1);
+}
+.content{
+    margin-left: 8px;
+}
+.content a{
+  text-align: left;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  line-height: 1px;
+
+}
+.content a:hover{
+    color: blue;
+}
+.content p{
+    font-size: 14px; 
+    line-height: 15px;
+}
+.content1{
+    background: grey;
+}
+.content1 a{
+ font-size: 16px;
+ text-decoration: none;
+ color: black;
+}
+.content1 a:hover{
+    color: blue;
+}
+.content1 p{
+    font-size: 14px;
+}
+aside{
+    background-color: white;
+    grid-area: aside;
+    height: 600px;
+    width: 500px;
+    margin-top: 15px;
+    margin-left: 70px;
+}
+.tin1{
+    margin-top: 5px;
+    display: flex;
+    padding-top: 10px;
+}
+.nd{
+    font-size: 14px;
+    margin-left: 10px;
+    text-align: left;
+    line-height: 18px;
+}
+.nd a{
+    text-decoration: none;
+    color: gray;
+}
+.nd a:hover{
+    color: blue;
+}
+
+
+
+
+
+
+
+footer{
+    background:pink;
+    grid-area: footer;
+    height: 200px;
+    background-image: url(../images/footer.jpg);
+    padding: 5px;
+    width: 1339px;
+    height: 250px;
+}
+.thongtin a:hover{
+    color:rebeccapurple
+}
+.map{
+    margin-left: 10px;
+}
+a{
+    text-decoration: none;
+}
+.thongtin{
+    text-align: left;
+    text-decoration: none;
+    font-style: italic;
+    font-size: small;
+    font-family:serif;
+    
+}
+.address{
+    display: flex;
+}
+.contact a{
+    text-align: left;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-weight: bold;
+    color: blue;
+    padding: 0 10px;
+
+}
+
+.contact>a:hover{
+    color: blueviolet;
+}

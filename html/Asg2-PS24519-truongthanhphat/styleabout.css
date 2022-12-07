@@ -1,0 +1,223 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+}
+header{
+    background-color:pink;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 20;
+}
+.logo{
+    display: block;
+    max-width: 180px;
+}
+.logo img{
+    width: 100%;
+}
+html, body{
+    font-family: sans-serif;
+}
+.main-menu{
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    font-weight: bold;
+    
+}
+.main-menu li{
+    list-style: none;
+    text-align: center;
+}
+.main-menu li a{
+    display: block;
+    color: #fff ;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    text-align: center;
+}
+.search-box{
+    margin-left: 30px;
+}
+
+.search-box .sb-text{
+    border-radius: 10px;
+    padding: 0 10px;
+    line-height: 20px;
+    height: 26px;
+    width: 150px;
+    background: transparent url(../images/1024px-Search_Icon.svg.png) no-repeat right;
+    background-size: contain;
+    
+}
+.main-menu li a:hover{
+    color: blue;
+}
+.main-menu ul{
+    margin-top: 0px;
+    min-width: 150px;
+    position:absolute;
+    display: none;
+    list-style: none;
+    border: 1px solid gray;
+    background-color: hotpink;
+    border-radius: 5px;
+    line-height: 5px;
+
+}
+.main-menu ul a{
+    display: block;
+    text-decoration: none;
+    font-size: 12px;
+    background-color: #fff;
+    font-style: italic;
+    color: palevioletred;
+    padding-left: 0px;
+    font-variant: small-caps;
+    text-align: center;
+}
+.main-menu>li:hover>ul{
+    display: block;
+}
+.main-menu ul a:hover{
+    background-color: blue;
+    color: white;
+    background: transparent url("/images/bullet.png") no-repeat 5px center;
+    background-size:10%;
+    background-color: blue;
+    
+}
+.column p{
+    text-align: center;
+}
+.phan1 p{
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+}
+.column .phan1 img{
+    padding-right: 10px;
+}
+.phan2{
+    background-color: rgb(204, 201, 201);
+    height: 500px;
+    margin-top: 120px;
+}
+.phan2 p{
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    padding: 20px;
+}
+.column .phan2 img{
+    padding-left: 10px;
+    margin-top: 20px;
+}
+.column .phan3 .hinh8 img{
+    margin-bottom: 40px;
+    position: relative;
+    bottom: 186px;
+    z-index: 10;
+}
+.column .phan3 .hinh7 img{
+    bottom: -30px;
+    position:relative;
+    z-index: 10;
+}
+.column .phan3 p{
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+    position:relative;
+    bottom: 500px;
+    right: -52%;
+    z-index: 10;
+}
+.column .phan4{
+    position: relative;
+    top: -220px;
+    background-color: rgb(207, 204, 204);
+    padding-bottom: 200px;
+}
+.column .phan4 p{
+    font-size: 14px;
+    line-height: 13px;
+}
+.column .phan4 img{
+    float: left;
+    padding-left: 100px;
+}
+
+.column .phan4 .icon1 h2{
+    font-size: 10px;
+    padding-left: 90px;
+}
+.column .phan4 .icon2 h2{
+    font-size: 10px;
+    padding-left: 340px;
+}
+.column .phan4 .icon3 h2{
+    font-size: 10px;
+    padding-left: 560px;
+}
+.column .phan4 .icon3{
+    position: relative;
+    top: -25px;
+}
+.icon13{
+    position: relative;
+    top: -200px;
+}
+footer{
+    background-image: url(../images/footer.jpg);
+    clear: both;
+    padding: 5px;
+    width: 100%;
+    height: 260px;
+}
+.address{
+    display: flex;
+}
+.map{
+    margin-left: 10px;
+}
+
+
+
+
+.thongtin a:hover{
+    color:rebeccapurple
+}
+.thongtin{
+    text-align: left;
+    text-decoration: none;
+    font-style: italic;
+    font-size: small;
+    font-family:serif;
+    
+}
+a{
+    text-decoration: none;
+}
+
+body
+{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+html, body
+{
+    height: 100%;
+}

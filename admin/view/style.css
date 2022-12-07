@@ -1,0 +1,26 @@
+body{
+    margin: 0 ;
+}
+
+header{
+    float: left;
+    width: 100%;
+    padding: 20px;
+    background-color: gray;
+    padding-left: 10px;
+}
+
+footer{
+    width: 100%;
+    background-color: gray;
+    float: left;
+    margin-top:50px;
+    padding: 20px;
+}
+
+.main{
+    background-color: white;
+    float: left;
+    width: calc(100% - 100px);
+    padding: 20px 50px;
+}

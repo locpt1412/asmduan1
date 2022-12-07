@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+}
+header{
+    background-color:pink;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+}
+.logo{
+    display: block;
+    max-width: 180px;
+}
+.logo img{
+    width: 100%;
+}
+html, body{
+    font-family: sans-serif;
+}
+.main-menu{
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    font-weight: bold;
+    
+}
+.main-menu li{
+    list-style: none;
+    text-align: center;
+}
+.main-menu li a{
+    display: block;
+    color: #fff ;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    text-align: center;
+}
+.search-box{
+    margin-left: 30px;
+}
+
+.search-box .sb-text{
+    border-radius: 10px;
+    padding: 0 10px;
+    line-height: 20px;
+    height: 26px;
+    width: 150px;
+    background: transparent url(../images/1024px-Search_Icon.svg.png) no-repeat right;
+    background-size: contain;
+    
+}
+.main-menu li a:hover{
+    color: blue;
+}
+.main-menu ul{
+    margin-top: 0px;
+    min-width: 150px;
+    position:absolute;
+    display: none;
+    list-style: none;
+    border: 1px solid gray;
+    background-color: hotpink;
+    border-radius: 5px;
+    line-height: 5px;
+
+}
+.main-menu ul a{
+    display: block;
+    text-decoration: none;
+    font-size: 12px;
+    background-color: #fff;
+    font-style: italic;
+    color: palevioletred;
+    padding-left: 0px;
+    font-variant: small-caps;
+    text-align: center;
+}
+.main-menu>li:hover>ul{
+    display: block;
+}
+.main-menu ul a:hover{
+    background-color: blue;
+    color: white;
+    background: transparent url("/images/bullet.png") no-repeat 5px center;
+    background-size:10%;
+    background-color: blue;
+    
+}
+p{
+    text-align: center;
+    font-size: 14px;
+    font-style:initial;
+    font-variant: small-caps;
+}
+.tongsanpham{
+    padding: auto;
+    margin-left: 50px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.sanpham{
+    border: 8px solid pink;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0px;
+    text-align: center;
+}
+.sanpham img:hover{
+    transform: scale(1.1);
+}
+.name{
+    font-variant: small-caps;
+    font-size: 7px;
+    font-weight: bold;
+    text-align: center;
+}
+.note{
+    font-size: 14px;
+    text-align: center;
+    font-style: italic;
+}
+.price{
+    text-align: center;
+
+}
+button{
+    color: white;
+    background-color: purple;
+    text-align: center;
+    border-radius: 10px;
+    padding: 0 10px;
+    line-height: 30px;
+}
+button:hover{
+    background-color: rgb(214, 113, 130);
+}
+footer{
+    background-color: pink;
+    clear: both;
+    padding: 5px;
+    width: 100%;
+
+}
+.thongtin a:hover{
+    color:rebeccapurple
+}
+.thongtin{
+    text-align: left;
+    text-decoration: none;
+    font-style: italic;
+    font-size: small;
+    font-family:serif;
+    
+}
+.contact a{
+    text-align: left;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-weight: bold;
+    color: blue;
+    padding: 0 10px;
+
+}
+
+.contact>a:hover{
+    color: blueviolet;
+}
+
+article{
+    width: 100%;
+    min-height: 900px;
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+}
+.container{
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+@media all and(max-width:760px) {
+    article{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+}

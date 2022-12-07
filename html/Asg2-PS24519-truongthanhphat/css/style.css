@@ -1,0 +1,176 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+}
+header{
+    background-color:pink;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+.logo{
+    display: block;
+    max-width: 180px;
+}
+.logo img{
+    width: 100%;
+}
+html, body{
+    font-family: sans-serif;
+}
+.main-menu{
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    font-weight: bold;
+    
+}
+.main-menu li{
+    list-style: none;
+    text-align: center;
+}
+.main-menu li a{
+    display: block;
+    color: #fff ;
+    text-decoration: none;
+    padding: 10px 12px;
+    font-size: 10px;
+    text-align: center;
+}
+.search-box{
+    margin-left: auto;
+}
+
+.search-box .sb-text{
+    border-radius: 10px;
+    padding: 0 10px;
+    line-height: 20px;
+    width: 100px;
+    background: transparent url(../images/1024px-Search_Icon.svg.png) no-repeat right;
+    background-size: contain;
+    
+}
+.main-menu li a:hover{
+    color: blue;
+}
+h2{
+    color: brown;
+    background-image: url(../images/ab8de500c4a5118e9d8044228f53f870.jpg);margin-top: 0px; margin-bottom: 5px;
+    border: 5px solid pink;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+}
+
+.column{
+    width: 25%;
+    height: 25%;
+    padding: auto;
+    float: left ;
+    margin-left: 40px;
+    margin-right:10px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    
+}
+.san-pham{
+    border: 8px solid pink;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+}
+.san-pham img:hover{
+    transform: scale(1.2);
+}
+
+button{
+    color: turquoise;
+    font-weight: bold;
+}
+
+.anhnen{
+    margin: 0px;
+    border: 2px solid pink;
+    border-radius: 5px;
+    padding-bottom: 0px
+}
+footer{
+    background-image: url(../images/footer.jpg);
+    clear: both;
+    padding: 5px;
+}
+.thongtin a:hover{
+    color:rebeccapurple
+}
+.thongtin{
+    text-align: left;
+    text-decoration: none;
+    font-style: italic;
+    font-size: small;
+    font-family:serif;
+    
+}
+.contact a{
+    text-align: left;
+    text-decoration: none;
+    font-variant: small-caps;
+    font-weight: bold;
+    color: blue;
+    padding: 0 10px;
+
+}
+
+.contact>a:hover{
+    color: blueviolet;
+}
+.main-menu ul{
+    margin-top: 0px;
+    min-width: 150px;
+    position:absolute;
+    display: none;
+    list-style: none;
+    border: 1px solid gray;
+    background-color: hotpink;
+    border-radius: 5px;
+    line-height: 5px;
+
+}
+.main-menu ul a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    border-top: 2px solid gray;
+    padding-left: 0px;
+    font-variant: small-caps;
+    text-align: center;
+}
+.main-menu>li:hover>ul{
+    display: block;
+}
+.main-menu ul a:hover{
+    background-color: blue;
+    color: white;
+    background: transparent url("/images/bullet.png") no-repeat 5px center;
+    background-size:10%;
+    background-color: blue;
+    
+}
+iframe[name="page"]{
+    width: 100%;
+    min-height: 400px;
+}
+
+
+
+
