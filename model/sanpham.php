@@ -16,7 +16,14 @@ function insert_sanpham($iddm, $tensp, $gia, $img){
   $conn->exec($sql);
 
 }
-
+function getonesp($id){
+   $conn=connectdb();
+   $stmt = $conn->prepare("SELECT * FROM tbl_sanpham WHERE id=".$id);
+   $stmt ->execute();
+   $result = $stmt ->setFetchMode(PDO:: FETCH_ASSOC);
+   $kq=$stmt->fetchAll();
+   return $kq;
+}
 
 
 

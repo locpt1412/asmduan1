@@ -14,6 +14,14 @@ switch ($_GET['act']) {
         include "view/about.php";
         break;
 
+        case 'sanphamchitiet':
+            if(isset($_GET['id'])&&($_GET['id']>0)){
+                $id=$_GET['id'];
+                $kq=getonesp($id);
+            }
+            include "view/sanphamchitiet.php";
+            break;
+
 
         case 'product':
             if(isset($_GET['id'])&&($_GET['id']>0)){
@@ -23,9 +31,6 @@ switch ($_GET['act']) {
             include "view/product.php";
             break;
     
-    case 'dangky':
-        include "view/dangky.php";
-        break;
 
         case 'thoat':
             unset ($_SESSION['role']);

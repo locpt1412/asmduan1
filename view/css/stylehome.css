@@ -108,6 +108,8 @@ del{
 .main-menu li a:hover{
     color: blue;
 }
+
+
 h2{
     
     color: brown;
@@ -143,11 +145,6 @@ article{
 }
 .san-pham img:hover{
     transform: scale(1.2);
-}
-
-button{
-    color: turquoise;
-    font-weight: bold;
 }
 
 .anhnen{

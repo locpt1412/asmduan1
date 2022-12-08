@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="./viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./view/css/stylehome.css">
     <link rel="stylesheet" href="./view/css/stylelogin.css">
     <link rel="stylesheet" href="./view/css/new2.css">
+    <link rel="stylesheet" href="./view/css/stylespchitiet.css"> 
     <link rel="stylesheet" href="./view/css/stylegiaiphap.css">  
     <link rel="stylesheet" href="./view/css/styleabout.css"> 
-    <link rel="stylesheet" href="./view/css/styleproduct.css">
+    <link rel="stylesheet" href="./view/css/stylespchitiet.css">
+    <link rel="stylesheet" href="./view/css/stylehome.css">
     
 </head>
 <body>
@@ -56,7 +57,7 @@
             
 
                 ?>
-                 <li><a href="index.php?act=dangky">ĐĂNG KÝ</a></li>
+                 <li><a href="index.php?act=sanphamchitiet">Sản Phẩm Chi Tiết</a></li>
                  <li><a href="index.php?act=dangnhap">ĐĂNG NHẬP</a></li>
                  <li><a href="index.php?act=addcart">GIỎ HÀNG</a></li>
                  <?php } ?>
