@@ -94,7 +94,9 @@ del{
 .search-box{
     margin-left: 30px;
 }
-
+.thongtin{
+    font-size: 30px
+};
 .search-box .sb-text{
     border-radius: 10px;
     padding: 0 10px;
