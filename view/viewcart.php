@@ -25,12 +25,14 @@ if((isset($_SESSION['giohang']))&&(count($_SESSION['giohang'])>0)){
 
     </tr>';
     $i = 0;
+    $tong=0;
     foreach ($_SESSION['giohang'] as $item) {
         $tt= $item[3] * $item[4];
+        $tong+=$tt;
         echo '<tr>
         <td style="background-color: grey;">'.($i+1).'</td>
         <td>'.$item[1].'</td>
-        <td>./uploads/'.$item[2].'</td>
+        <td>'.$item[2].'</td>
         <td>'.$item[3].'</td>
         <td>'.$item[4].'</td>
         <td>'.$tt.'</td>
@@ -38,13 +40,49 @@ if((isset($_SESSION['giohang']))&&(count($_SESSION['giohang'])>0)){
     </tr>';
     $i++;   
     }
+    echo '<tr><td colspan="5"><strong>Tổng giá trị đơn hàng</strong></td><td>$'.$tong.'</td></tr>';
     echo '</table>';
 } 
 
 ?>
 <br>
-    <a href="index.php">Tiếp tục mua hàng</a> | <a href="">Thanh toán</a> | <a href="index.php?act=delcart">Xóa giỏ hàng</a>
+    <a href="index.php">Tiếp tục mua hàng</a> | <a href="index.php?act=delcart&id">Xóa giỏ hàng</a>
 
 </div>
+<div class="col-md-4 contact-left-content">
+<h3>THÔNG TIN ĐẶT HÀNG</h3>
+<form action="index.php?act=thanhtoan" method="post">
+<input type="hidden" name="tongdonhang" value="<?=$tong?>">
+<table class="dathang" style="margin-top:120px ; margin-left:10px;">
+    <tr>
+        <td><input type="text" name="hoten" placeholder="Nhập họ tên"></td>
+    </tr>
+    <tr>
+        <td><input type="text" name="address" placeholder="Nhập địa chỉ"></td>
+    </tr>
+    <tr>
+        <td><input type="text" name="email" placeholder="Nhập email"></td>
+    </tr>
+    <tr>
+        <td><input type="text" name="tel" placeholder="Nhập số điện thoại"></td>
+    </tr>
+    <tr>
+        <td>Phương thức thanh toán <br>
+        <input type="radio" name="pttt" value="1">Thanh toán khi nhận hàng <br>
+        <input type="radio" name="pttt" value="2">Thanh toán Chuyển Khoản <br>
+        <input type="radio" name="pttt" value="3">Thanh toán Ví MOMO <br>
+        <input type="radio" name="pttt" value="4">Thanh toán Online <br>
+
+
+
+        </td>
+    </tr>
+    <tr>
+        <td><input type="submit" value="Thanh Toán" name="thanhtoan"></td>
+    </tr>
+</table>
+</form>
+</div>
+
 </body>
 </html>

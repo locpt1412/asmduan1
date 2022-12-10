@@ -5,6 +5,7 @@ include "model/connectdb.php";
 include "model/danhmuc.php";
 include "model/sanpham.php";
 include "model/user.php";
+include "model/donhang.php";
 $dsdm=getall_dm();
 $sphome1=getall_sp(0,"");
 include "view/header.php";
@@ -38,6 +39,30 @@ switch ($_GET['act']) {
             unset ($_SESSION['username']);
 
             header('location: index.php');
+            break;
+        case'thanhtoan':
+            if((isset($_POST['thanhtoan']))&&($_POST['thanhtoan'])){
+                //lay du lieu
+                $tongdonhang=$_POST['tongdonhang'];
+                $hoten=$_POST['hoten'];
+                $address=$_POST['address'];
+                $email=$_POST['email'];
+                $tel=$_POST['tel'];
+                $pttt=$_POST['pttt'];
+                $madh="PHATKS".rand(0,999999);
+                //tao don hang
+                //va tra ve mot id don hang
+                $iddh=taodonhang($madh,$tongdonhang,$pttt,$hoten,$address,$email,$tel);
+                $_SESSION['iddh']=$iddh;
+                if(isset($_SESSION['giohang'])&&(count($_SESSION)>0)){
+                    foreach ($_SESSION['giohang'] as $item) {
+                        addtocart($iddh, $item[0],$item[1],$item[2],$item[3],$item[4]);
+                    }
+                    unset($_SESSION['giohang']); 
+                }
+            }
+            include "view/donhang.php";
+
             break;
     case'login':
         if(isset ($_POST['login'])&&($_POST['login'])){
