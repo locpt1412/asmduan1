@@ -93,7 +93,7 @@ if(isset($_GET['act'])){
             break;
 
         case 'donhang':
-            include "view/donhang.php";
+            include "view/donhang/donhang.php";
             break;
             case 'thoat':
 
