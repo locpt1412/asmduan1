@@ -1,1 +1,0 @@
-<p>thanh toán</p>

@@ -26,7 +26,6 @@
         <th style="background-color: pink; ">Hành động</th>
 
     </tr>';
-<<<<<<< HEAD
     $i = 0;
     $tong=0;
     foreach ($_SESSION['giohang'] as $item) {
@@ -35,7 +34,7 @@
         echo '<tr>
         <td style="background-color: grey;">'.($i+1).'</td>
         <td>'.$item[1].'</td>
-        <td>'.$item[2].'</td>
+        <td><img src="./uploads/'.$item[2].'" width=80></td>
         <td>'.$item[3].'</td>
         <td>'.$item[4].'</td>
         <td>'.$tt.'</td>
@@ -87,60 +86,6 @@
 </form>
 </div>
 
-=======
-            $i = 0;
-            $tong = 0;
-            foreach ($_SESSION['giohang'] as $item) {
-                $tt = $item[3] * $item[4];
-                $tong += $tt;
-                echo '<tr>
-        <td style="background-color: grey;">' . ($i + 1) . '</td>
-        <td>' . $item[1] . '</td>
-        <td><img src="./uploads/'.$item[2].'" width=80</td>
-        <td>' . $item[3] . '</td>
-        <td>' . $item[4] . '</td>
-        <td>' . $tt . '</td>
-        <td> <a href="index.php?act=delcart&i=' . $i . '">Xóa</a> </td>
-    </tr>';
-                $i++;
-            }
-            echo '<tr><td colspan="5">Tổng tiền: </td><td>' . $tong . '</td><td></td></tr>';
-            echo '</table>';
-        }
-
-        ?>
-        <br>
-        <a href="index.php">Tiếp tục mua hàng</a> | <a href="view/thanhtoan.php">Thanh toán</a> | <a href="index.php?act=delcart">Xóa giỏ hàng</a>
-
-    </div>
-    <!-- <div class="col-md-4 contact-left-content">
-        <h3> THÔNG TIN ĐẶT HÀNG</h3>
-        <form action="index.php?act=thanhtoan" method="post">
-            <input type="hidden" name="tongdonhang" value="<?= $tong ?>">
-            <table class="dathang">
-                <tr>
-                    <td><input type="text" name="adress" placeholder="Nhập địa chỉ"></td>
-                </tr>
-                <tr>
-                    <td><input type="text" name="hoten" placeholder="Nhập họ tên"></td>
-                </tr>
-                <tr>
-                    <td><input type="text" name="email" placeholder="Nhập email"></td>
-                </tr>
-                <tr>
-                    <td><input type="text" name="tel" placeholder="Nhập số điện thoại"></td>
-                </tr>
-                <tr>
-                    <td>Phương thức thanh toán<br>
-                        <input type="radio" name="pttt" value="1"> Thanh toán khi nhận hàng <br>
-                        <input type="radio" name="pttt" value="2"> Thanh toán Chuyển khoản <br>
-                        <input type="radio" name="pttt" value="3"> Thanh toán ví MoMo<br>
-                        <input type="radio" name="pttt" value="4"> Thanh toán Online<br>
-                    </td>
-                </tr>
-            </table> -->
-
->>>>>>> c1e13f4525caa33848dd6753d68d7b9ae6c0c21e
 </body>
 
 </html>

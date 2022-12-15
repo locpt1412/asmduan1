@@ -5,14 +5,9 @@ include "model/connectdb.php";
 include "model/danhmuc.php";
 include "model/sanpham.php";
 include "model/user.php";
-<<<<<<< HEAD
 include "model/donhang.php";
 $dsdm=getall_dm();
 $sphome1=getall_sp(0,"");
-=======
-$dsdm = getall_dm();
-$sphome1 = getall_sp(0, "");
->>>>>>> c1e13f4525caa33848dd6753d68d7b9ae6c0c21e
 include "view/header.php";
 if (isset($_GET['act'])) {
     switch ($_GET['act']) {
@@ -45,7 +40,6 @@ if (isset($_GET['act'])) {
 
             header('location: index.php');
             break;
-<<<<<<< HEAD
         case'thanhtoan':
             if((isset($_POST['thanhtoan']))&&($_POST['thanhtoan'])){
                 //lay du lieu
@@ -82,20 +76,6 @@ if (isset($_GET['act'])) {
             }else{
                 $_SESSION['role']=$role;
                 $_SESSION['iduser']=$kq[0]['id'];
-=======
-        case 'login':
-            if (isset($_POST['login']) && ($_POST['login'])) {
-                $user = $_POST['user'];
-                $pass = $_POST['pass'];
-                $kq = getuserinfo($user, $pass);
-                $role = $kq[0]['role'];
-                if ($kq[0]['role'] == 1) {
-                    $_SESSION['role'] = $role;
-                    header('location: admin/index.php');
-                } else {
-                    $_SESSION['role'] = $role;
-                    $_SESSION['iduser'] = $kq[0]['id'];
->>>>>>> c1e13f4525caa33848dd6753d68d7b9ae6c0c21e
 
                     $_SESSION['username'] = $kq[0]['user'];
                     header('location: index.php');
